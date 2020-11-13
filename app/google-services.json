@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "335497664554",
+    "firebase_url": "https://carpool02-453af.firebaseio.com",
+    "project_id": "carpool02-453af",
+    "storage_bucket": "carpool02-453af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335497664554:android:5de8b8971f3c7c72694b53",
+        "android_client_info": {
+          "package_name": "com.example.carpool02"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335497664554-6lb7l0m14b9nqklj6nuk8iobrino3ct5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKGXnxebK8r3IeA3nY6iLRpAfQrIlcd98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335497664554-6lb7l0m14b9nqklj6nuk8iobrino3ct5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

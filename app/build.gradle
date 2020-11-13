@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.carpool02"
+        minSdkVersion 22
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug{
+            buildConfigField 'String',"placesuggestionapikey",CP_PS_API_KEY
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField 'String',"placesuggestionapikey",CP_PS_API_KEY
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta4'
+    implementation 'com.google.firebase:firebase-auth:19.3.0'
+    implementation 'com.google.firebase:firebase-database:19.3.0'
+    implementation 'com.google.firebase:firebase-firestore:21.4.3'
+    implementation 'com.google.firebase:firebase-storage:17.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha03'
+
+}
